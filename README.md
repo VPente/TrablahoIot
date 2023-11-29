@@ -101,7 +101,7 @@ A documentação das APIs está disponível no Postman para facilitar o teste e 
 
 # Front-End
 
-CAde meu resumo
+CAde
 
 
 # Funcionamento Do Embarcado
