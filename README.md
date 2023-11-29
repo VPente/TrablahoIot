@@ -18,7 +18,7 @@ Máquinas de vendas convencionais são grandes e pesadas o que dificulta o trans
 <p>- 1 Fonte 5V </p>
 
 
-<h2>Estrutura</h2>
+<h1>Estrutura</h1>
 
 <div align="center">
 <h2>Back-End</h2>
@@ -32,7 +32,39 @@ Máquinas de vendas convencionais são grandes e pesadas o que dificulta o trans
     O Prisma é o principal ORM (Object-Relational Mapping) escolhido para a interação com o banco de dados. Ele simplifica a manipulação de dados, oferecendo uma abstração intuitiva para consultas ao banco de dados MongoDB.</div>
     <div><h4>MongoDB</h4>
     O banco de dados escolhido para armazenar os dados do projeto é o MongoDB. Sua natureza de banco de dados NoSQL oferece flexibilidade e escalabilidade, adequando-se bem às necessidades do projeto.</div>
-   
-    
 
+</div>
+<div>
+<h3>Arquitetura</h3>
+O projeto adota uma arquitetura limpa, que visa separar as responsabilidades em diferentes camadas para facilitar a manutenção e escalabilidade do sistema. A orientação a objetos é utilizada para promover um design modular e coeso.
+</div>
+<div>
+<h3>Camadas da Arquitetura</h3>
+<div><h4>Entidades</h4>
+Nesta camada, são definidas as entidades de negócio do sistema. Cada módulo do projeto possui suas próprias entidades, como máquinas de venda, esteiras, produtos, histórico de vendas e filas de venda.
+</div>
+<div><h4>Casos de Uso</h4>
+Os casos de uso representam as principais funcionalidades do sistema. Cada módulo possui seus próprios casos de uso, que interagem com as entidades para realizar operações específicas.
+</div>
+<div><h4>Controladores</h4>
+Os controladores atuam como interfaces entre as rotas da aplicação e os casos de uso correspondentes. Eles recebem as requisições, manipulam os dados necessários e chamam os casos de uso apropriados.
+</div>
+<div><h4>Gateways</h4>
+Os gateways são responsáveis pela comunicação com fontes externas, como o banco de dados MongoDB. O Prisma é utilizado como gateway para manipular os dados no banco de dados.
+</div>
+Módulos
+1. vendingMachines
+Este módulo é responsável por gerenciar as máquinas de venda. As entidades associadas incluem informações sobre as máquinas e funcionalidades relacionadas à venda de produtos.
+
+2. vendingMachinesConveyors
+O módulo vendingMachinesConveyors concentra-se no gerenciamento das esteiras das máquinas de venda.
+
+3. products
+O módulo products gerencia as informações sobre os produtos disponíveis para venda. Isso inclui detalhes como nome, preço e descrição.
+
+4. productSalesHistory
+Este módulo armazena o histórico de vendas dos produtos. Ele registra informações relevantes sobre cada transação realizada.
+
+5. shoppings
+O módulo shoppings é responsável por armazenar a fila de vendas. Ele gerencia a ordem em que as transações são processadas, garantindo uma experiência de compra eficiente.
 </div>
