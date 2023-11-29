@@ -99,9 +99,33 @@ A documentação das APIs está disponível no Postman para facilitar o teste e 
 - 4ª Para consultar o status do pagamento utilizamos o endpoint /payments, porém consultando via GET para ter a resposta se o pagamento foi efetuado com sucesso e prosseguir para próxima etapa.
 </div>
 
-# Front-End
 
-CAde meu resumo
+
+# Front-end
+<div>
+## React + Vite
+
+Front-end Feito em ReactJs Utilizando Vite. Vite é uma ferramenta de construção de projetos de frontend que se destina a oferecer uma experiência de desenvolvimento mais rápida e leve para projetos de web modernos.
+
+### Funções 🚀
+  ## Página Home
+  
+  - get(): Na página Home temos a função de get() que foi utilizada para buscar todos os dados dos produtos na máquina de vendas pelo endpoint: vending-machines/:id/products
+  
+  ## No componente Modal temos outras funções:
+  
+  - payment(): A função de pagamento foi utilizada para realizar o pagaemnto do produto via pix na api do mercado pago pelo endpoint /payments/pix. Vale citar que, transaction_amount foi setado para 0.01 para fins     de pix ilustrativos.
+
+  - getPaymentStatus(id): A função checa se o pagamento foi aceito e validado, o parametro id vem no momento em que o pagamento é acionado ele retorna o id do pagamento, onde o mesmo é passado para a função que           possui o endpoint: /payments/:id .
+
+  - postConveyor(): A função posta para o backend qual é a esteira que ele deseja que caia o produto, para isso, passamos o conveyorId no body da requisição do endpoint: /shoppings, body:{conveyorId: id}.
+
+### Estilos 🖊️
+
+    Para a estilização do front-end foi utilizada a biblioteca styled-components. A biblioteca permite fazer estilos em CSS nos arquivos JS, o que se torna mais fácil a criação de componentes.
+
+</div>
+
 
 
 # Funcionamento Do Embarcado
