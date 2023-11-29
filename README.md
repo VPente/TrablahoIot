@@ -17,11 +17,12 @@ Máquinas de vendas convencionais são grandes e pesadas o que dificulta o trans
 <p>- 2 Sensores Ultrassonicos Hc-Sr04</p>
 <p>- 1 Fonte 5V </p>
 
-<div align="center">
-<h2>Estrutura</h2>
-</div>
 
+<h2>Estrutura</h2>
+
+<div align="center">
 <h2>Back-End</h2>
+</div>
 <div>
     <h3>Tecnologias Utilizadas:</h3>
     <div> <h4>Node.js, JavaScript e TypeScrip</h4>
