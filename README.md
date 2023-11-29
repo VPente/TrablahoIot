@@ -16,3 +16,10 @@ Máquinas de vendas convencionais são grandes e pesadas o que dificulta o trans
 <p>- 2 Controladores de Motor de passo Driver Uln2003 Arduino Robótica/nf</p>
 <p>- 2 Sensores Ultrassonicos Hc-Sr04</p>
 <p>- 1 Fonte 5V </p>
+
+<div align="center">
+<h2>Arquitetura</h2>
+</div>
+
+<h2>Back-End</h2>
+<h3>Tecnologias Utilizadas</h3>
