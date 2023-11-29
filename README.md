@@ -24,12 +24,12 @@ Máquinas de vendas convencionais são grandes e pesadas o que dificulta o trans
 <h2>Back-End</h2>
 <div>
     <h3>Tecnologias Utilizadas:</h3>
-    <div> <p>Node.js, JavaScript e TypeScrip</p>
+    <div> <h4>Node.js, JavaScript e TypeScrip</h4>
     O projeto utiliza o ambiente de execução Node.js, que permite a execução de código JavaScript do lado do servidor. O código é desenvolvido principalmente em JavaScript, com o uso opcional de TypeScript para fornecer tipagem estática e outras funcionalidades avançadas.</div>
     <div>
-    <p>Prisma</p>
+    <h4>Prisma</h4>
     O Prisma é o principal ORM (Object-Relational Mapping) escolhido para a interação com o banco de dados. Ele simplifica a manipulação de dados, oferecendo uma abstração intuitiva para consultas ao banco de dados MongoDB.</div>
-    <div><p>MongoDB</p>
+    <div><h4>MongoDB</h4>
     O banco de dados escolhido para armazenar os dados do projeto é o MongoDB. Sua natureza de banco de dados NoSQL oferece flexibilidade e escalabilidade, adequando-se bem às necessidades do projeto.</div>
    
     
