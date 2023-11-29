@@ -107,13 +107,13 @@ A documentação das APIs está disponível no Postman para facilitar o teste e 
 
 Front-end Feito em ReactJs Utilizando Vite. Vite é uma ferramenta de construção de projetos de frontend que se destina a oferecer uma experiência de desenvolvimento mais rápida e leve para projetos de web modernos.
 
-### Funções 🚀
+## Funções 🚀
 
-  ## Página Home
+  ### Página Home
 
   - get(): Na página Home temos a função de get() que foi utilizada para buscar todos os dados dos produtos na máquina de vendas pelo endpoint: vending-machines/:id/products
   
-  ## No componente Modal temos outras funções:
+  ### No componente Modal temos outras funções:
   
   - payment(): A função de pagamento foi utilizada para realizar o pagaemnto do produto via pix na api do mercado pago pelo endpoint /payments/pix. Vale citar que, transaction_amount foi setado para 0.01 para fins     de pix ilustrativos.
 
@@ -126,7 +126,6 @@ Front-end Feito em ReactJs Utilizando Vite. Vite é uma ferramenta de construç�
 Para a estilização do front-end foi utilizada a biblioteca styled-components. A biblioteca permite fazer estilos em CSS nos arquivos JS, o que se torna mais fácil a criação de componentes.
 
 </div>
-
 
 # Funcionamento Do Embarcado
 
