@@ -8,6 +8,13 @@
 
 A falta de pontos fixos de venda em eventos que ocorrem em cidades distantes.
 Máquinas de vendas convencionais são grandes e pesadas o que dificulta o transporte fazendo com que oportunidades de vendas em eventos  sejam perdidas para isso a nossa solução propõem um projeto de máquina de vendas automática portátil onde que é facilmente carregada de evento em evento trazendo assim uma maior eficiência e maiores oportunidades, abaixo será documentado as etapas e processos para o desenvolvimento do MVP desta solução
+
+## Instalação
+- Clone este repositório ```git clone https://github.com/gustavoalvessouza/iot-abp-api.git```
+- Instalar pacotes ```pnpm install```
+- Rodar aplicação em modo de desenvolvimento ```pnpm start:dev```
+- Preencha as variaveis de ambiente no arquivo .env de acordo com o exemplo no arquivo .env.example.
+  
 <div>
 <h2>Diagrama de Arquitetura</h2>
 <img src="./imgs/DiagramArq.png">
@@ -75,14 +82,14 @@ O projeto adota uma arquitetura limpa, que visa separar as responsabilidades em 
 
 #### shoppings
 - O módulo shoppings é responsável por armazenar a fila de vendas. Ele gerencia a ordem em que as transações são processadas, garantindo uma experiência de compra eficiente.
-</div>
+
 
 ## Documentação Postman
 
 A documentação das APIs está disponível no Postman para facilitar o teste e entendimento das funcionalidades. Você pode acessar a coleção Postman <a class="sc-fznMAR bdDlXZ markdown-link" href="https://documenter.getpostman.com/view/19858191/2s9YXiYLxg" target="_blank" rel="noreferrer noopener nofollow"><span>aqui</span></a>
-
+<div>
+    
 # API De Pagamento
-
 ## Mercado Pago
 
 ### Etapas
@@ -90,17 +97,17 @@ A documentação das APIs está disponível no Postman para facilitar o teste e 
 - 2ª Tendo o token de acesso foi criado um endpoint para a API que faz uma requisição do tipo POST para o endpoint do mercado /payaments passando todas as informações sendo elas, valor do pix, dados do comprador, endereço e access token
 - 3ª A API do mercado pago retorna um JSON contendo o QR CODE para o pagamento ser efetuado via pix
 - 4ª Para consultar o status do pagamento utilizamos o endpoint /payments, porém consultando via GET para ter a resposta se o pagamento foi efetuado com sucesso e prosseguir para próxima etapa.
+</div>
 
-#Front-End
+# Front-End
 
 CAde meu resumo
 
 
-#Funcionamento Do Embarcado
+# Funcionamento Do Embarcado
 
-##Dois ESP32 das Esteiras
-
-####Funcionamento das funções
+### Dois ESP32 das Esteiras
+#### Funcionamento das funções
 - Inclui as bibliotecas
 - Define os pinos
 - Inicia os pinos de entrada e saída.
@@ -109,9 +116,8 @@ CAde meu resumo
 - Função de ligar a esteira que gira o motor e inicia a leitura do sensor
 - Leitura do sensor, fica lendo o sensor e quando temos uma distância menor que 7cm (passa um item) ele desliga.
 
-##ESP32 da Central
-
-####Funcionamento das funções
+### ESP32 da Central
+#### Funcionamento das funções
 - Inicia uma rede WIFI para os ESP32 das Esteiras se conectarem a uma rede Wifi para poderem compratilhar a internet
 - Utiliza da biblioteca Wifimaneger para conectar as esteiras ao wifi
 <img src="./imgs/ImagemWifiManeger.png">
